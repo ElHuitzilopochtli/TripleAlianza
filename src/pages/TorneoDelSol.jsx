@@ -15,7 +15,7 @@ export default function TorneoDelSol(){
           <h2 className="text-2xl font-bold">Detalles</h2>
           <ul className="mt-4 grid sm:grid-cols-2 gap-4">
             {[
-              ["Formato","Eliminación directa. Bo3 durante todo el torneo."],
+              ["Formato","Eliminación directa. Bo3 durante todo el torneo. Maximos participantes 32 equipos."],
               ["Plataformas","Transmisión en YouTube/TikTok. Organización vía Discord."],
               ["Requisitos","5 jugadores + 1 suplente (opcional). Todos en el Discord."],
               ["Reporte","El capitán reporta resultado con captura en el Discord oficial."]

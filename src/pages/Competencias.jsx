@@ -60,7 +60,7 @@ const { rounds } = buildBracket(teamsText.split("\n"));
                 ☀️ Torneo del Sol — <span className="text-yellow-300">Flash Cup</span>
               </h3>
               <p className="mt-2 text-zinc-300 text-sm">
-                Eliminación directa. Torneo de 2 dias al Bo3. Organización vía Discord. ¡Sin límite de equipos!
+                Eliminación directa. Torneo de 2 dias al Bo3. Organización vía Discord. con un maximo de 32 Equipos.
               </p>
               <ul className="mt-3 text-xs text-zinc-400 space-y-1">
                 <li>• Requisitos: 5 jugadores + (opcional) 1 suplente.</li>
