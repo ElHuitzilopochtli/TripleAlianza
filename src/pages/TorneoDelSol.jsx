@@ -33,11 +33,11 @@ export default function TorneoDelSol(){
         <aside className="space-y-3">
           <div className="rounded-xl border border-white/10 p-5 bg-gradient-to-br from-yellow-500/10 to-cyan-500/10">
             <p className="text-sm text-zinc-300">Fecha sugerida</p>
-            <p className="text-2xl font-bold text-yellow-300">15 de Noviembre</p>
+            <p className="text-2xl font-bold text-yellow-300">22 de Noviembre</p>
           </div>
           <div className="rounded-xl border border-white/10 p-5">
             <p className="text-sm text-zinc-300">Prize Pool:</p>
-            <p className="text-lg font-semibold">8000 Diamantes</p>
+            <p className="text-lg font-semibold">2500 MXN</p>
           </div>
           <a href={discordInvite} target="_blank" rel="noreferrer" className="block text-center rounded-xl bg-emerald-500/90 hover:bg-emerald-400 px-5 py-3 font-semibold">Inscribir equipo (Discord)</a>
         </aside>
