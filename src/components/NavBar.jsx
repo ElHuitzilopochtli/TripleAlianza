@@ -1,7 +1,7 @@
 // src/components/NavBar.jsx
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-
+import Triple from "../img/triple.png"
 export default function NavBar() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
@@ -21,7 +21,9 @@ export default function NavBar() {
       <div className="bg-black/80 backdrop-blur border-b border-white/10">
         <div className="mx-auto max-w-7xl px-4 h-14 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <div className="h-9 w-9 rounded-full bg-gradient-to-br from-yellow-400 via-amber-400 to-orange-500 ring-2 ring-yellow-300/40" />
+                     <div className="h-11 w-11 " >
+                        <img src={Triple} alt="TripleAlianzalogo" />
+   </div>
             <div className="leading-tight">
               <p className="font-extrabold tracking-wide text-base md:text-lg">TRIPLE ALIANZA</p>
               <p className="text-[11px] md:text-xs text-zinc-300">Esports • México</p>

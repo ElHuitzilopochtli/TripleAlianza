@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { buildBracket } from "../utils/bracket.js";
-import HeroCompetencias from "../img/Kagura.png"; // pon aquí tu héroe
 
 export default function Competencias() {
   const discordInvite = "https://discord.gg/9ttJUed5rR";
@@ -31,43 +30,23 @@ Equipo D`);
 
   return (
     <main className="min-h-screen bg-[#050509] text-white">
-{/* CABECERA */}
-{/* CABECERA */}
-<section className="relative mx-auto max-w-7xl px-4 pt-16 pb-10 overflow-hidden">
-  {/* Héroe grande de fondo arriba a la derecha */}
-  <div
-    aria-hidden="true"
-    className="pointer-events-none absolute -top-16 right-[-4rem] md:right-[-2rem] lg:right-0 opacity-90"
-  >
-    <img
-      src={HeroCompetencias}
-      alt=""
-      className="w-[50rem] sm:w-[50rem] md:w-[50rem] lg:w-[60rem] drop-shadow-[0_30px_90px_rgba(0,0,0,0.9)]"
-      loading="lazy"
-    />
-  </div>
+      {/* CABECERA */}
+      <section className="mx-auto max-w-7xl px-4 pt-16 pb-10">
+        <p className="text-[11px] uppercase tracking-[0.3em] text-yellow-300 mb-1">
+          Triple Alianza Esports
+        </p>
+        <h1 className="text-4xl md:text-5xl font-extrabold">Competencias</h1>
+        <p className="mt-3 text-zinc-300 max-w-2xl text-sm md:text-base">
+          Aquí encontrarás nuestras ligas y torneos activos. Cuando lancemos
+          nuevas ediciones, aparecerán en esta sección.
+        </p>
 
-  {/* Degradado para que el texto se lea bien */}
-  <div className="pointer-events-none absolute inset-y-0 right-0 w-2/3 md:w-1/2 bg-gradient-to-l from-[#050509] via-[#050509]/65 to-transparent" />
-
-  {/* Texto de la cabecera */}
-  <div className="relative max-w-xl">
-    <p className="text-[20px] uppercase tracking-[0.3em] text-yellow-300 mb-1">
-      Triple Alianza Esports
-    </p>
-    <h1 className="text-4xl md:text-5xl font-extrabold">Competencias</h1>
-    <p className="mt-3 text-zinc-300 max-w-2xl text-sm md:text-base">
-      Aquí encontrarás nuestras ligas y torneos activos. Cuando lancemos
-      nuevas ediciones, aparecerán en esta sección.
-    </p>
-
-    {/* Tabs */}
-    <div className="mt-6 flex items-center gap-3">
-      <TabButton id="ligas">Ligas</TabButton>
-      <TabButton id="torneos">Torneos</TabButton>
-    </div>
-  </div>
-</section>
+        {/* Tabs */}
+        <div className="mt-6 flex items-center gap-3">
+          <TabButton id="ligas">Ligas</TabButton>
+          <TabButton id="torneos">Torneos</TabButton>
+        </div>
+      </section>
 
       {/* CONTENIDO */}
       <section className="mx-auto max-w-7xl px-4 pb-16">
@@ -147,7 +126,7 @@ Equipo D`);
               {/* Botón */}
               <div className="mt-5 flex flex-wrap gap-3">
                 <Link
-                  to="/torneo-del-sol-apertura"
+                  to="/torneo-del-sol"
                   className="rounded-xl bg-yellow-400 text-black font-bold px-5 py-2 text-sm hover:bg-yellow-300"
                 >
                   Ver resumen del torneo
@@ -163,7 +142,7 @@ Equipo D`);
                     Torneo del Sol
                   </p>
                   <h2 className="mt-1 text-xl md:text-2xl font-extrabold">
-                    Enero-Febrero
+                    Enero
                   </h2>
                 </div>
                 <span className="px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-300 text-[11px] uppercase tracking-wide border border-yellow-400/70">
@@ -193,7 +172,8 @@ Equipo D`);
 
               {/* Descripción */}
               <p className="mt-4 text-xs md:text-sm text-zinc-200 leading-relaxed">
-                Nueva edición del Torneo del Sol iniciando el año con este formato bimestral. Ya puedes registrarte las fechas se publicarán en el
+                Nueva edición del Torneo del Sol pensada como Flash Cup de
+                inicio de año. Fechas, premios y registro se publicarán en el
                 servidor de Discord de Triple Alianza.
               </p>
 
@@ -207,7 +187,7 @@ Equipo D`);
               <div className="mt-5 flex flex-wrap gap-3">
                 {/* Ruta placeholder, cámbiala cuando tengas la página de enero */}
                 <Link
-                  to="/torneo-del-sol-enero-febrero"
+                  to="/torneo-del-sol-enero"
                         className="rounded-xl bg-yellow-400 text-black font-bold px-5 py-2 text-sm hover:bg-yellow-300"
                 >
                   Ver anuncio
